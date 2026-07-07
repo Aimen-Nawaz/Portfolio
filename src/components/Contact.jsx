@@ -44,9 +44,7 @@ function Contact() {
 
           <h2 className="text-5xl md:text-7xl font-bold text-gray-900">
             Contact
-            <span className="ml-3 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-              Me
-            </span>
+        
           </h2>
 
         
@@ -56,7 +54,7 @@ function Contact() {
           {/* Left Side */}
           <div className="bg-white/70 backdrop-blur-xl border border-white/60 rounded-3xl p-8 shadow-xl">
             <h3 className="text-3xl font-bold text-gray-900 mb-8">
-              My Information
+              Contact us
             </h3>
 
             <div className="space-y-8">

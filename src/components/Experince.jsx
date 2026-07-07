@@ -22,7 +22,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="relative py-32 overflow-hidden bg-gradient-to-br from-[#fff7ed] via-[#f8fafc] to-[#eef2ff]"
+      className="relative py-32 h-min-screen overflow-hidden bg-gradient-to-br from-[#fff7ed] via-[#f8fafc] to-[#eef2ff]"
     >
       {/* Background Blur */}
       <div className="absolute w-96 h-96 bg-pink-300/20 rounded-full blur-[140px] top-0 right-0"></div>

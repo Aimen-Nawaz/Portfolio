@@ -5,6 +5,8 @@ function Skills() {
     { name: "JavaScript", percent: 85 },
     { name: "React", percent: 90 },
     { name: "Tailwind CSS", percent: 88 },
+     { name: "Zod Validation", percent: 70 },
+     { name: "React Hook Form", percent: 75 },
   ];
 
   const backend = [
@@ -12,7 +14,6 @@ function Skills() {
   ];
 
   const others = [
-    { name: "Zod Validation", percent: 70 },
     { name: "Git & GitHub", percent: 80 },
     { name: "UI/UX Understanding", percent: 65 },
   ];
@@ -30,7 +31,7 @@ function Skills() {
 
       <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-pink-500 to-blue-500 rounded-full"
+          className="h-full bg-linear-to-r from-pink-500 to-blue-500 rounded-full"
           style={{ width: `${skill.percent}%` }}
         />
       </div>
@@ -54,7 +55,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="py-16 px-6 bg-gradient-to-br from-[#fff7ed] via-[#f8fafc] to-[#eef2ff]"
+      className="py-16 px-6 bg-linear-to-br from-[#fff7ed] via-[#f8fafc] to-[#eef2ff]"
     >
       <div className="max-w-5xl mx-auto">
 

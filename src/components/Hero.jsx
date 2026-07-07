@@ -4,7 +4,7 @@ import { FaCode } from "react-icons/fa";
 import { TbForms } from "react-icons/tb";
 
 const Hero = () => {
-  const fullText = "Aimen Nawaz";
+  const fullText = "Frontend Developer";
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [index, setIndex] = useState(0);
@@ -66,19 +66,18 @@ const Hero = () => {
           {/* LEFT */}
           <div className="max-w-2xl">
 
-            <p className="uppercase tracking-[0.35em] text-gray-500 text-sm mb-6">
-              Frontend Developer
-            </p>
-
-            <h1 className="text-5xl md:text-8xl font-bold leading-[1.05] text-gray-900">
+            <h1 className="text-5xl  text-gray-700 md:text-8xl font-bold leading-[1.05] ">
               Hi,
               <br />
-              I'm{" "}
-              <span className="ml-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent border-r-4 border-purple-500 pr-3">
-                {text}
+              I'm <span className="ml-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent  border-purple-500 pr-3">
+                Aimen Nawaz
               </span>
             </h1>
 
+            <h2 className="text-2xl md:text-4xl font-semibold mt-6 text-gray-700">
+              {text}
+              <span className="border-r-4 border-purple-500 ml-2"></span>
+            </h2>
             <p className="mt-8 text-lg md:text-xl text-gray-600 leading-relaxed">
               Building clean digital experiences with React, modern UI design,
               API integrations, Zod validation, and scalable frontend architecture.
@@ -88,15 +87,15 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <a
                 href="#projects"
-                className="px-8 py-4 rounded-2xl bg-black text-white text-center shadow-lg hover:-translate-y-1 transition"
+                className="px-8 py-4 mb-4 rounded-2xl bg-black text-white text-center shadow-lg hover:-translate-y-1 transition"
               >
                 View Projects
               </a>
 
               <a
-                href= "C:\Users\hp\Downloads\AimenCV.pdf"
+                href="C:\Users\hp\Downloads\AimenCV.pdf"
                 download
-                className="px-8 py-4 rounded-2xl bg-white border-2 border-gray-300 text-gray-800 text-center shadow-lg hover:-translate-y-1 transition"
+                className="px-8 py-4 mb-4 rounded-2xl bg-white border-2 border-gray-300 text-gray-800 text-center shadow-lg hover:-translate-y-1 transition"
               >
                 Download CV
               </a>
