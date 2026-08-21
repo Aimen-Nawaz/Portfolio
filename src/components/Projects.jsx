@@ -31,6 +31,12 @@ function Projects() {
       image: form,
     },
     {
+      title: "Cake & Baked Website",
+      desc: "A modern responsive bakery website with cake, cookie, and bread collections, product details, wishlist, cart, and a clean user-friendly interface.",
+      tech: "Next.js, TypeScript, Tailwind CSS, Express.js, Prisma, PostgreSQL",
+      image: cakeAndBaked,
+    },
+    {
       title: "Word Reconstruction Model (Pharmaceutical Corpus + AI)",
       desc: "An AI-based NLP project that reconstructs missing or corrupted words using a pharmaceutical taxonomy corpus. Built using Python and machine learning sequence models to predict and restore correct word sequences with high accuracy.",
       tech: "Python, NLP, Machine Learning, Sequence Models",
@@ -63,7 +69,7 @@ function Projects() {
               className="bg-white rounded-2xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col h-full overflow-hidden"
             >
 
-      
+
               <div className="h-54 w-full bg-white rounded-2xl flex">
                 <img
                   src={project.image}
