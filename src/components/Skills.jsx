@@ -1,21 +1,36 @@
 function Skills() {
   const frontend = [
-    { name: "HTML", percent: 95 },
-    { name: "CSS", percent: 90 },
+    { name: "HTML & CSS", percent: 95 },
     { name: "JavaScript", percent: 85 },
+    { name: "TypeScript", percent: 80 },
     { name: "React", percent: 90 },
+    { name: "Next.js", percent: 85 },
     { name: "Tailwind CSS", percent: 88 },
-     { name: "Zod Validation", percent: 70 },
-     { name: "React Hook Form", percent: 75 },
+    { name: "Redux Toolkit", percent: 78 },
+    { name: "RTK Query", percent: 78 },
+    { name: "React Hook Form", percent: 75 },
+    { name: "Zod Validation", percent: 70 },
   ];
 
   const backend = [
+    { name: "Express.js", percent: 75 },
     { name: "REST API Integration", percent: 80 },
+    { name: "JWT Authentication", percent: 75 },
+    { name: "Prisma ORM", percent: 70 },
+  ];
+
+  const database = [
+    { name: "PostgreSQL", percent: 75 },
+    { name: "Database Design", percent: 70 },
+    { name: "SQL", percent: 70 },
   ];
 
   const others = [
     { name: "Git & GitHub", percent: 80 },
+    { name: "Postman", percent: 80 },
+    { name: "Responsive Design", percent: 90 },
     { name: "UI/UX Understanding", percent: 65 },
+
   ];
 
   const SkillCard = ({ skill }) => (
@@ -38,13 +53,13 @@ function Skills() {
     </div>
   );
 
-  const Column = ({ title, data }) => (
+  const Column = ({ title, data, grid = false }) => (
     <div className="bg-white/40 backdrop-blur-xl border border-white/40 rounded-2xl p-5 shadow-md">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
         {title}
       </h3>
 
-      <div className="space-y-3">
+      <div className={grid ? "grid grid-cols-2 gap-3" : "space-y-3"}>
         {data.map((skill) => (
           <SkillCard key={skill.name} skill={skill} />
         ))}
@@ -59,31 +74,30 @@ function Skills() {
     >
       <div className="max-w-5xl mx-auto">
 
-         <p className="uppercase tracking-[0.35em]   text-gray-500 text-sm text-center mb-4">
-            My Skills
-          </p>
+        <p className="uppercase tracking-[0.35em]   text-gray-500 text-sm text-center mb-4">
+          My Skills
+        </p>
         <h2 className="text-3xl md:text-6xl font-bold text-center text-gray-900">
-           Skills
+          Skills
         </h2>
 
         <p className="text-center text-gray-500 mt-2 mb-10 text-sm">
-        
+
         </p>
 
         {/* 2 Columns Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          {/* LEFT COLUMN */}
-          <Column title="Frontend" data={frontend} />
-
-          {/* RIGHT COLUMN (STACKED) */}
-          <div className="space-y-6">
-
+          <Column
+            title="Frontend"
+            data={frontend}
+            grid
+          />
+          
             <Column title="Backend Tools" data={backend} />
-
+            <Column title="Database" data={database} />
             <Column title="Other Tools" data={others} />
 
-          </div>
 
         </div>
 
