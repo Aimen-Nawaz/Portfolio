@@ -3,6 +3,7 @@ import product from "../images/product.png";
 import flower from "../images/flower-shop.png";
 import form from "../images/form.png";
 import word from "../images/word.png";
+import cakeAndBaked from "../images/cakeAndBaked.png"
 
 function Projects() {
   const projects = [
@@ -32,8 +33,8 @@ function Projects() {
     },
     {
       title: "Cake & Baked Website",
-      desc: "A modern responsive bakery website with cake, cookie, and bread collections, product details, wishlist, cart, and a clean user-friendly interface.",
-      tech: "Next.js, TypeScript, Tailwind CSS, Express.js, Prisma, PostgreSQL",
+      desc: "A fully responsive modern bakery e-commerce website featuring cakes, cookies, and baked goods with product browsing, detailed product pages, wishlist, shopping cart, authentication, admin product management, and a smooth user-friendly experience.",
+      tech: "Next.js, React, TypeScript, Tailwind CSS, Express.js, Prisma, PostgreSQL, RTK Query, JWT",
       image: cakeAndBaked,
     },
     {
